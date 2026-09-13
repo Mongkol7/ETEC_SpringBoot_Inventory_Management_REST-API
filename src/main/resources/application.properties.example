@@ -1,0 +1,39 @@
+# ===================================================================
+# Application Configuration Example
+# Copy this file to application.properties and update the values
+# ===================================================================
+
+# Application Information
+spring.application.name=etec_spring04
+server.port=8082
+
+# ===================================================================
+# Database Configuration (PostgreSQL)
+# ===================================================================
+spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
+spring.datasource.username=postgres
+spring.datasource.password=your_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# ===================================================================
+# JPA / Hibernate Configuration
+# ===================================================================
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# ===================================================================
+# Multipart / File Upload Settings
+# ===================================================================
+spring.servlet.multipart.max-file-size=20MB
+spring.servlet.multipart.max-request-size=20MB
+spring.servlet.multipart.enabled=true
+
+# ===================================================================
+# Cloudinary Configuration (For Image Uploads)
+# Obtain credentials from: https://console.cloudinary.com/
+# ===================================================================
+cloudinary.cloud-name=your_cloudinary_cloud_name
+cloudinary.api-key=your_cloudinary_api_key
+cloudinary.api-secret=your_cloudinary_api_secret

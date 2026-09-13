@@ -1,4 +1,4 @@
-package com.example.etec_spring04.dto;
+package com.example.etec_spring04.dto.Response;
 
 import java.time.LocalDateTime;
 
